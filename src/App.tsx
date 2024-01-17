@@ -1,5 +1,9 @@
 function App() {
-  return <div>Recut</div>;
+  return (
+    <div>
+      <h1 className="text-3xl font-bold underline">Recut!</h1>
+    </div>
+  );
 }
 
 export default App;
