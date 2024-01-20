@@ -1,17 +1,10 @@
 import { ArrowDown } from 'lucide-react';
-import { Video, useVideo } from '../../state/video/video';
+
+const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = () => {
+  // Todo: Handle input change
+};
 
 function Upload() {
-  const { onVideoSelect } = useVideo();
-
-  const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = ({
-    target,
-  }) => {
-    if (target.files && target.files.length > 0) {
-      onVideoSelect(target.files[0] as Video);
-    }
-  };
-
   return (
     <div className="relative inset-0 flex h-full w-full flex-col items-center justify-center gap-4">
       <p className="text-4xl">Drop a video to edit</p>
