@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --config ./config/vite.config.ts",
-    "build": "tsc && vite --config ./config/vite.config.ts build",
+    "build": "tsc -p ./config/tsconfig.json && vite --config ./config/vite.config.ts build",
     "preview": "vite --config ./config/vite.config.ts preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --config ./config/.eslintrc.cjs --ignore-path ./config/.eslintignore",
     "format": "prettier . --write --config ./config/prettier.config.cjs --ignore-path ./config/.prettierignore",
