@@ -8,7 +8,7 @@
     "build": "tsc && vite --config ./config/vite.config.ts build",
     "preview": "vite --config ./config/vite.config.ts preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "format": "prettier . --write",
+    "format": "prettier . --write --config ./config/prettier.config.cjs",
     "test": "vitest"
   },
   "dependencies": {
